@@ -26,6 +26,7 @@ if($row == 1) {
     header('Location: painel.php');
     exit();
 } else {
+    $_SESSION['nao_autenticado'] = true; //quando o usuario não for autenticado.
     header('Location: index.php');
     exit();
 }
