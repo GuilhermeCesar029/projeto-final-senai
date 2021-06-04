@@ -6,4 +6,4 @@ define('SENHA', '');
 define('DB', 'projeto-final');
 
 //criando conexão
-$conexão = mysqli_connect(HOST, USUARIO, SENHA, DB) or die ('Não foi possível conectar');
+$conexao = mysqli_connect(HOST, USUARIO, SENHA, DB) or die ('Não foi possível conectar');
