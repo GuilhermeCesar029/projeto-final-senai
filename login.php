@@ -1,4 +1,5 @@
 <?php 
+session_start();
 include('conexao.php');
 
 //Validação, só pode ir para a pagina de login se os inputs não forem fazios.
