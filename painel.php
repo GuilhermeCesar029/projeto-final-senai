@@ -66,6 +66,6 @@ include('verifica_login.php');
             </div>
         </div>
     </nav>
-
+    <script src="./js/painel.js"></script>
 </body>
 </html>
