@@ -12,13 +12,13 @@ include('verifica_login.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/bulma.min.css" />
+    <link rel="stylesheet" href="../css/bulma.min.css" />
 </head>
 <body>
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="#">
-                <img src="./assets/img/logo.png" width="100" height="28">
+                <img src="../assets/img/logo.png" width="100" height="28">
             </a>
 
             <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
