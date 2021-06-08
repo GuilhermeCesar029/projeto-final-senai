@@ -5,7 +5,7 @@ include_once 'includes/header.php';
 <div class="row">
     <div class="col s12 m6 push-m3">
         <h3 class="ligth">Adicionar Clientes</h3>
-        <form action="">
+        <form action="php_action/create.php" method="POST">
             <div class="input-field col s12">
                 <input type="text" name="nome" id="nome">
                 <label for="nome">Nome</label>
@@ -19,8 +19,8 @@ include_once 'includes/header.php';
                 <label for="email">Email</label>
             </div>
 
-            <button type="submit" class="btn">Enviar</button>
-            <button type="submit" class="btn orange">Voltar</button>
+            <button type="submit" name="btn-cadastrar" class="btn">Enviar</button>
+            <a href="index.php"  class="btn orange">Voltar</a>
         </form>
     </div>  
 </div>

@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include('conexao.php');
+include('../crud/php_action/conexao.php');
 
 //Validação, só pode ir para a pagina de login se os inputs não forem fazios.
 if(empty($_POST['usuario']) || empty($_POST['senha'])) {
