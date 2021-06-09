@@ -1,4 +1,8 @@
-<?php 
+<?php
+//conexão
+include_once 'php_action/conexao.php';
+
+//header
 include_once 'includes/header.php';
 ?>
 
@@ -17,14 +21,21 @@ include_once 'includes/header.php';
                 </tr>
             </thead>
             <tbody>
+                <?php
+                    $query = "select * from clientes";
+                    $resultado = mysqli_query($conexao, $query);
+
+                    while($dados = mysqli_fetch_array($resultado)):
+                ?>
                 <tr>
-                    <td>1</td>
-                    <td>Teste</td>
-                    <td>02</td>
-                    <td>teste02@gmail.com</td>
+                    <td><?php echo $dados['id']; ?></td>
+                    <td><?php echo $dados['nome']; ?></td>
+                    <td><?php echo $dados['sobrenome']; ?></td>
+                    <td><?php echo $dados['email']; ?></td>
                     <td><a href="" class="btn-floating orange"><i class="material-icons">edit</i></a></td>
                     <td><a href="" class="btn-floating red"><i class="material-icons">delete</i></a></td>                                
                 </tr>
+                <?php endwhile; ?>
             </tbody>
         </table>
         <br>
