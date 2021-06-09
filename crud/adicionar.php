@@ -1,8 +1,8 @@
 <?php 
-include_once 'includes/header.php';
-
 //incluindo arquivo de verificação do login
 include('../login/verifica_login.php');
+
+include_once 'includes/header.php';
 ?>
 
 <div class="row">

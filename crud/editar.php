@@ -1,11 +1,10 @@
 <?php 
 //conexão
 include_once 'php_action/conexao.php';
-//header
-include_once 'includes/header.php';
 //incluindo arquivo de verificação do login
 include_once '../login/verifica_login.php';
-
+//header
+include_once 'includes/header.php';
 //select 
 if(isset($_GET['id'])): 
     $id = mysqli_escape_string($conexao, $_GET['id']);
