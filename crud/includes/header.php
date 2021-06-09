@@ -1,8 +1,3 @@
-<?php 
-//incluindo arquivo de verificação do login
-include('../login/verifica_login.php');
-?>
-
 
 <!DOCTYPE html>
 <html lang="pt-br">

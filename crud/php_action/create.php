@@ -1,4 +1,7 @@
 <?php
+//sessão
+session_start();
+//conexão
 require_once 'conexao.php';
 
 //verificando se o botão foi clicado 
@@ -10,8 +13,10 @@ if(isset($_POST['btn-cadastrar'])):
     $query = "insert into clientes (nome, sobrenome, email) values ('$nome', '$sobrenome', '$email')";
 
     if(mysqli_query($conexao, $query)): 
-        header('Location: ../index.php?sucesso');
+        $_SESSION['mensagem'] = "Cadastrado com sucesso!";
+        header('Location: ../index.php');
     else:  
-        header('Location: ../adicionar.php?erro');
+        $_SESSION['mensagem'] = "Erro ao cadastrar!";
+        header('Location: ../adicionar.php');
     endif;        
 endif;

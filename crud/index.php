@@ -1,9 +1,13 @@
 <?php
+//incluindo arquivo de verificação do login
+include_once '../login/verifica_login.php';    
 //conexão
 include_once 'php_action/conexao.php';
-
 //header
 include_once 'includes/header.php';
+//mensagem
+include_once 'includes/message.php';
+
 ?>
 
 <div class="row">
