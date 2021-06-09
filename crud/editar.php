@@ -17,7 +17,7 @@ endif;
 
 <div class="row">
     <div class="col s12 m6 push-m3">
-        <h3 class="ligth">Editar Clientes</h3>
+        <h3 class="ligth">Editar Cliente</h3>
         <form action="php_action/update.php" method="POST">
             <input type="hidden" name="id" value="<?php echo $dados['id']; ?>">
             <div class="input-field col s12">
